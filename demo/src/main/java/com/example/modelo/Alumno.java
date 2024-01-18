@@ -53,7 +53,53 @@ public class Alumno {
     public Alumno() { }
 
     // Getters y setters para cada atributo
-    // ...
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getApellidos() {
+        return apellidos;
+    }
+
+    public void setApellidos(String apellidos) {
+        this.apellidos = apellidos;
+    }
+
+    public String getCurso() {
+        return curso;
+    }
+
+    public void setCurso(String curso) {
+        this.curso = curso;
+    }
+
+    public int getN_asignaturas_matriculado() {
+        return n_asignaturas_matriculado;
+    }
+
+    public void setN_asignaturas_matriculado(int n_asignaturas_matriculado) {
+        this.n_asignaturas_matriculado = n_asignaturas_matriculado;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
 
     // Método toString para representar el objeto Alumno como una cadena de texto
     @Override
@@ -61,5 +107,7 @@ public class Alumno {
         return "Alumno [id=" + id + ", nombre=" + nombre + ", apellidos=" + apellidos + ", curso=" + curso
                 + ", n_asignaturas_matriculado=" + n_asignaturas_matriculado + ", edad=" + edad + "]";
     }
+
+   
 
 }
