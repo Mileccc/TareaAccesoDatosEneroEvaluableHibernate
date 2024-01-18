@@ -32,7 +32,8 @@ public class Alumno {
     @Column(name = "curso")
     private String curso;
 
-    // Atributo n_asignaturas_matriculado mapeado a la columna 'n_asignaturas_matriculado'
+    // Atributo n_asignaturas_matriculado mapeado a la columna
+    // 'n_asignaturas_matriculado'
     @Column(name = "n_asignaturas_matriculado")
     private int n_asignaturas_matriculado;
 
@@ -50,10 +51,57 @@ public class Alumno {
     }
 
     // Constructor vacío requerido por Hibernate
-    public Alumno() { }
+    public Alumno() {
+    }
 
     // Getters y setters para cada atributo
-    // ...
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getApellidos() {
+        return apellidos;
+    }
+
+    public void setApellidos(String apellidos) {
+        this.apellidos = apellidos;
+    }
+
+    public String getCurso() {
+        return curso;
+    }
+
+    public void setCurso(String curso) {
+        this.curso = curso;
+    }
+
+    public int getN_asignaturas_matriculado() {
+        return n_asignaturas_matriculado;
+    }
+
+    public void setN_asignaturas_matriculado(int n_asignaturas_matriculado) {
+        this.n_asignaturas_matriculado = n_asignaturas_matriculado;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
 
     // Método toString para representar el objeto Alumno como una cadena de texto
     @Override
